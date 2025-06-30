@@ -16,7 +16,7 @@ def weatherAPI(latitude, longitude, API_KEY):
     print(f"Latitude:{latitude}\nLongitude:{longitude}\n Temperature: "
           f"{tempC}\n Humidity: {relative_humidity}\n Heat_Index:{HIinCelcius} ")
 
-#TODO: Convert into valid returns
+    return relative_humidity, tempC, HIinCelcius
 
 
 def calculateHeatIndex(relative_humidity, temperatureF):
